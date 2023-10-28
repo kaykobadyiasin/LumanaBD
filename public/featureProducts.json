@@ -1,0 +1,87 @@
+[
+    {
+      "_id": 1,
+      "productName": "Product 1",
+      "image": "https://images.unsplash.com/photo-1600857062241-98e5dba7f214?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1998&q=80",
+      "description": "This is the description for Product 1.",
+      "price": 19.99
+    },
+    {
+      "_id": 2,
+      "productName": "Product 2",
+      "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&q=80&w=2012&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "This is the description for Product 2.",
+      "price": 29.99
+    },
+    {
+      "_id": 3,
+      "productName": "Product 3",
+      "image": "https://images.unsplash.com/photo-1600857062241-98e5dba7f214?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1998&q=80",
+      "description": "This is the description for Product 3.",
+      "price": 15.99
+    },
+    {
+      "_id": 4,
+      "productName": "Product 4",
+      "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&q=80&w=2012&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "This is the description for Product 4.",
+      "price": 39.99
+    },
+    {
+      "_id": 5,
+      "productName": "Product 5",
+      "image": "https://images.unsplash.com/photo-1600857062241-98e5dba7f214?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1998&q=80",
+      "description": "This is the description for Product 5.",
+      "price": 24.99
+    },
+    {
+      "_id": 6,
+      "productName": "Product 6",
+      "image": "https://images.unsplash.com/photo-1600857062241-98e5dba7f214?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1998&q=80",
+      "description": "This is the description for Product 6.",
+      "price": 49.99
+    },
+    {
+      "_id": 7,
+      "productName": "Product 7",
+      "image": "https://images.unsplash.com/photo-1600857062241-98e5dba7f214?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1998&q=80",
+      "description": "This is the description for Product 7.",
+      "price": 34.99
+    },
+    {
+      "_id": 8,
+      "productName": "Product 8",
+      "image": "https://images.unsplash.com/photo-1600857062241-98e5dba7f214?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1998&q=80",
+      "description": "This is the description for Product 8.",
+      "price": 44.99
+    },
+    {
+      "_id": 9,
+      "productName": "Product 9",
+      "image": "https://images.unsplash.com/photo-1600857062241-98e5dba7f214?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1998&q=80",
+      "description": "This is the description for Product 9.",
+      "price": 54.99
+    },
+    {
+      "_id": 10,
+      "productName": "Product 10",
+      "image": "https://images.unsplash.com/photo-1600857062241-98e5dba7f214?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1998&q=80",
+      "description": "This is the description for Product 10.",
+      "price": 19.99
+    },
+    {
+      "_id": 11,
+      "productName": "Product 11",
+      "image": "https://images.unsplash.com/photo-1600857062241-98e5dba7f214?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1998&q=80",
+      "description": "This is the description for Product 11.",
+      "price": 29.99
+    },
+    {
+      "_id": 12,
+      "productName": "Product 12",
+      "image": "https://images.unsplash.com/photo-1600857062241-98e5dba7f214?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1998&q=80",
+      "description": "This is the description for Product 12.",
+      "price": 15.99
+    }
+  ]
+  
