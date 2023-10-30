@@ -1,9 +1,9 @@
 [
     {
       "_id": 1,
-      "productName": "Product 1",
+      "productName": "Special Product 1",
       "image": "https://images.unsplash.com/photo-1600857062241-98e5dba7f214?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1998&q=80",
-      "description": "This is the description for Product 1.",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas illo, maiores enim sit nihil quos assumenda dignissimos exercitationem vitae incidunt doloribus voluptates, cum doloremque odit obcaecati! Consequatur eum aperiam quaerat fuga itaque asperiores. Sint, cupiditate amet iure totam labore, dolor incidunt veniam inventore aliquam, cumque officia hic. Similique, hic dolorum.",
       "price": 19.99
     },
     {
@@ -17,7 +17,7 @@
       "_id": 3,
       "productName": "Product 3",
       "image": "https://images.unsplash.com/photo-1600857062241-98e5dba7f214?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1998&q=80",
-      "description": "This is the description for Product 3.",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas illo, maiores enim sit nihil quos assumenda dignissimos exercitationem vitae incidunt doloribus voluptates, cum doloremque odit obcaecati! Consequatur eum aperiam quaerat fuga itaque asperiores. Sint, cupiditate amet iure totam labore, dolor incidunt veniam inventore aliquam, cumque officia hic. Similique, hic dolorum.",
       "price": 15.99
     },
     {
