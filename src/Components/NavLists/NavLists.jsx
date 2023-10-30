@@ -1,81 +1,64 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const NavLists = () => {
     const [categories, setCategories] = useState([]);
     const [menuData, setMenuData] = useState([
         {
-            title: "HouseHold",
-            url: "/household",
+            category: "houseHold",
+            subCategories: [],
         },
         {
-            title: "Kids & Mom",
-            url: "/kids-mom",
+            category: "kids&Mom",
+            subCategories: [],
         },
         {
-            title: "Electronics",
-            url: "/electronics",
+            category: "electronics",
+            subCategories: [],
         },
         {
-            title: "Lifestyles",
-            subMenu: [
-                {
-                    title: "Bag",
-                    url: "https://www.youtube.com/watch?v=WAaIkw2fYCI&list=WL",
-                },
-            ],
+            category: "lifestyles",
+            subCategories: ['bag'],
         },
         {
-            title: "Foods",
-            url: "/foods",
+            category: "foods",
+            subCategories: [],
         },
         {
-            title: "Kitchen",
-            subMenu: [
-                {
-                    title: "Blender & Mixer",
-                    url: "https://www.youtube.com/watch?v=WAaIkw2fYCI&list=WL",
-                },
-                {
-                    title: "Plate",
-                    url: "https://www.youtube.com/watch?v=WAaIkw2fYCI&list=WL",
-                },
-                {
-                    title: "Gas Solution",
-                    url: "https://www.youtube.com/watch?v=WAaIkw2fYCI&list=WL",
-                },
-            ],
+            category: "kitchen",
+            subCategories: ['bag'],
         },
         {
-            title: "Cosmetics",
-            url: "/cosmetics",
+            category: "cosmetics",
+            subCategories: [],
         },
         {
-            title: "Health",
-            url: "/health",
+            category: "health",
+            subCategories: ['bag'],
         },
         {
-            title: "Clothing",
-            url: "/clothing",
+            category: "clothing",
+            subCategories: [],
         },
         {
-            title: "Education",
-            url: "/education",
+            category: "education",
+            subCategories: ['bag'],
         },
         {
-            title: "Service",
-            url: "/service",
+            category: "service",
+            subCategories: [],
         },
         {
-            title: "Hot Offer",
-            url: "/hot-offer",
+            category: "hotOffer",
+            subCategories: [],
         },
     ]);
 
     useEffect(() => {
         fetch('categoryList.json')
-        .then(res => res.json())
-        .then(data => setCategories(data))
+            .then(res => res.json())
+            .then(data => setCategories(data))
     }, [])
 
     // Merge JSON data into menuData
@@ -92,44 +75,45 @@ const NavLists = () => {
 
     return (
         <div>
-            <div className="bg-white pt-3 rounded-l-md">
-                <ul className="flex flex-col gap-3 text-sm">
+            <div className="bg-white pt-3 rounded-l-md relative">
+                <ul className="flex flex-col gap-3 text-sm ">
                     {menuData.map((item, index) => (
                         <li key={index} className="border-b pb-2 px-5">
-                            {item.subMenu ? (
-                                <div
-                                    className="flex justify-between items-center"
-                                    onClick={() => handleMenuClick(index)}
-                                >
-                                    {item.title}
-                                    <div className="relative">
-                                        <svg
-                                            className="w-2.5 h-2.5 ml-2.5"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            fill="none"
-                                            viewBox="0 0 6 10"
-                                        >
-                                            <path stroke="currentColor" stroke-width="2" d="m1 9 4-4-4-4" />
-                                        </svg>
+                            {item.subCategories ? (
+                                <>
+                                    {/* <Link to={`/${item.category}`}> */}
+                                    <div
+                                        className="flex justify-between items-center"
+                                        onClick={() => handleMenuClick(index)}
+                                    >
+                                        <h3 className="capitalize">{item.category}</h3>
+                                        <ArrowForwardIosIcon fontSize="small" />
+                                    </div>
+                                    {/* </Link> */}
+
+
+                                    <div
+                                        className={
+                                            openMenu === index
+                                                ? "z-50 block absolute 2xl:left-64 xl:left-52 lg:right-0 lg:left-40 -right-10 top-0 bg-white shadow w-52 h-full"
+                                                : "hidden"
+                                        }
+                                    >
                                         <div
-                                            className={
-                                                openMenu === index
-                                                    ? "z-40 block absolute lg:left-10 right-0 -top-6 bg-white rounded-r-lg shadow w-48"
-                                                    : "hidden"
-                                            }
+
                                         >
                                             <ul className="py-2 text-sm">
-                                                {item.subMenu.map((subItem, subIndex) => (
+                                                {item.subCategories.map((subItem, subIndex) => (
                                                     <li key={subIndex}>
-                                                        <Link to={subItem.url} className="block px-4 py-2 hover:bg-gray-100">
-                                                            {subItem.title}
+                                                        <Link to={`${item.category}/${subItem}`} className="block px-4 py-2 border-b hover:bg-gray-100">
+                                                            {subItem}
                                                         </Link>
                                                     </li>
                                                 ))}
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
+                                </>
                             ) : (
                                 <Link to={item.url}>{item.title}</Link>
                             )}
